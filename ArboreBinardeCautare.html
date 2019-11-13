@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="General.css" />
+    <link rel="stylesheet" href="DataStructureStyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>Arbori binari de cautare</title>
+   
+</head>
+<body>
+    
+   
+        <ul>
+            <li class="right"><a href="Homepg.html">Structuri de Date si Algoritmi</a></li>
+            <li><a href="#home">Contact</a></li>
+            <li><a href="Homepg.html">Despre noi</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Algoritmi</a>
+                <div class="dropdown-content">
+                    <a href="StivesiCozi.html">Stive si Cozi</a>
+                    <a href="ArboreBinardeCautare.html">Arbori binari de cautare</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Structuri de date</a>
+                <div class="dropdown-content">
+                    <a href="StivesiCozi.html">Stive si Cozi</a>
+                    <a href="ArboreBinardeCautare.html">Arbori binari de cautare</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+        </ul>
+        <div class="main-section">
+            <div class="content">
+                <div class="big-title">
+                    Arbori binari dă cautare
+                </div>
+                <p>
+                    O stiva este o lista in cadrul careia avem acces la ultimul element inserat.
+                </p>
+                <p>
+                    Astfel, noi putem insera elemente intr-un singur capat si doar din acelasi capat putem scoate elemente, cate unul rand pe rand.
+                </p>
+                <p>
+                    Daca vrem sa accesam un anumit element din stiva, este necesar sa le scoatem pe toate cele care sunt "deasupra" lui pentru a putea ajunge la el.
+                </p>
+                <p>
+                    Acest principiu de inserare se numeste LIFO(last in, first out) si presupune extragerea elementelor din lista in ordine inversa a insertiei.
+                </p>
+                <h2>Operatii</h2>
+                <ul>
+                    <li>
+                        <b> insert()</b>
+                        <ul>
+                            <li>
+                                inserarea unui element;
+                            </li>
+                            <li>
+                                plec de la radacina si, pentru fiecare nod prin care trec, verific daca valoarea pe care vreau eu sa o adaug este mai mare sau mai mica;
+                      
+                            </li>
+                            <li>
+                                daca este mai mare, continui comparatia cu fiul drept; altfel compar cu fiul stang;
+              
+                            </li>
+                            <li>
+                                repet procesul cu fiecare nod prin care trec pana cand ajung la o frunza;
+                            </li>
+                            <li>
+                                daca valoarea nodului curent este mai mare decat valoarea pe care dorim sa o inseram, valoarea va fi inserata ca fiu drept, altfel va fi inserata ca fiu stang.
+                            </li>
+                        </ul>
+                    </li>
+                   
+                    <li>
+                        <b>find()</b>
+                        <ul>
+                            <li>
+                                gasirea unui element;
+                            </li>
+                            <li>
+                                incep de la radacina si, daca valoarea nodului este egala cu valoarea pe care o cautam noi, o afisam;
+                            </li>
+                            <li>
+                                in caz contrar, daca valoarea nodului cautat este mai mica, continuam rationamentul pentru fiul stang; altfel- pentru fiul drept;
+                            </li>
+                            <li>
+                                ne oprim din cautare fie daca gasim valoarea, fie daca am ajuns la o frunza si valoarea acesteia nu coincide cu cea cautata de noi. 
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <b> delete()</b>
+                        <ul>
+                            <li>
+                                sterge o valoare data de noi.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <br />
+                <br />
+                <div class="example-title">
+                    Vizualizare practica a unui arbore binar de cautare
+                </div>
+
+                <p>Testeaza si tu simulatorul de arbore binar de cautare!</p>
+                <p>Introdu numerele aici:</p>
+                <form>
+                    <input type="Text" value-size="4" />
+                    <button>
+                        insert
+                    </button>
+                    <button>
+                        find
+                    </button>
+                    <button>
+                        delete
+                    </button>
+                </form>
+                <br />
+                </div>
+            </div>
+    </body>
+</html>

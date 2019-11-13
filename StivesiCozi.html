@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="General.css" />
+    <link rel="stylesheet" href="DataStructureStyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <title>Stive si Cozi</title>
+</head>
+<body>
+    <ul>
+        <li class="right"><a href="Homepg.html">Structuri de Date si Algoritmi</a></li>
+        <li><a href="#home">Contact</a></li>
+        <li><a href="Homepg.html">Despre noi</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Algoritmi</a>
+            <div class="dropdown-content">
+                <a href="StivesiCozi.html">Stive si Cozi</a>
+                <a href="ArboreBinardeCautare.html">Arbori binari de cautare</a>
+                <a href="#">Link 3</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Structuri de date</a>
+            <div class="dropdown-content">
+                <a href="StivesiCozi.html">Stive si Cozi</a>
+                <a href="ArboreBinardeCautare.html">Arbori binari de cautare</a>
+                <a href="#">Link 3</a>
+            </div>
+        </li>
+    </ul>
+    <div class="main-section">
+        <div class="content">
+            <div class="big-title">
+                Stive si cozi
+            </div>
+            <h1>1.Stive</h1>
+            <p>
+                O stiva este o lista in cadrul careia avem acces la ultimul element inserat.
+            </p>
+            <p>
+                Astfel, noi putem insera elemente intr-un singur capat si doar din acelasi capat putem scoate elemente, cate unul rand pe rand.
+            </p>
+            <p>
+                Daca vrem sa accesam un anumit element din stiva, este necesar sa le scoatem pe toate cele care sunt "deasupra" lui pentru a putea ajunge la el.
+            </p>
+            <p>
+                Acest principiu de inserare se numeste LIFO(last in, first out) si presupune extragerea elementelor din lista in ordine inversa a insertiei.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/F1F2imiOJfk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>Operatii</h2>
+            <ul>
+                <li>
+                    <b> top()</b>
+                    <ul>
+                        <li>
+                            ne spune care este primul element in ordinea inserarii (capatul "stang" al listei);
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <b>push()</b>
+                    <ul>
+                        <li>
+                            adauga un nou element in acelasi capat al listei;
+                        </li>
+                    </ul>
+
+                </li>
+                <li>
+                    <b> pop()</b>
+                    <ul>
+                        <li>
+                            scoate ultimul element din lista (elementul dat de <b>top()</b>).
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <br />
+            <br />
+            <div class="example-title">
+                Vizualizare practica a stivei
+            </div>
+
+            <p>Testeaza si tu simulatorul de stive!</p>
+            <p>Introdu numerele aici:</p>
+            <form>
+                <input type="Text" value-size="4" />
+                <button>
+                    push
+                </button>
+                <button>
+                    top
+                </button>
+                <button>
+                    pop
+                </button>
+            </form>
+            <br />
+
+
+
+            <h1>2.Cozi</h1>
+            <p>
+                O coada este o lista in cadrul careia avem acces doar la primul element inserat.
+            </p>
+            <p>
+                Spre deosebire de stive, putem insera elemente intr-un singur capat si extrage doar din celalalt cate unul rand pe rand.
+            </p>
+            <p>
+                Daca vrem sa accesam un anumit element din coada, este necesar sa le scoatem pe toate cele care sunt "sub" el pentru a putea ajunge la el.
+            </p>
+            <p>
+                Acest principiu de inserare se numeste FIFO(first in, first out) si presupune extragerea elementelor din lista in ordinea insertiei.
+            </p>
+            <h2>Operatii</h2>
+            <ul>
+                <li>
+                    <b>top()</b>:
+                    <ul>
+                        <li>
+                            ne spune care este primul element in ordinea inserarii (capatul "stang" al listei);
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <b>push()</b>:
+                    <ul>
+                        <li>
+                            adauga un nou element in capatul "drept" al listei;
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>pop()</b>:
+                    <ul>
+                        <li>
+                            scoate primul element din lista (elementul dat de <b>top())</b>.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <br />
+            <br />
+            <div class="example-title">
+                Vizualizare practica a cozii
+            </div>
+            Testeaza si tu simulatorul de cozi!
+            <p>Introdu numerele aici:</p>
+            <form>
+                <input type="Text" value-size="4" />
+                <button>
+                    push
+                </button>
+                <button>
+                    top
+                </button>
+                <button>
+                    pop
+                </button>
+            </form>
+            <br />
+
+        </div>
+    </div>
+    <table>
+
+    </table>
+      
+        <div class="footer">
+            <div class="footer-content">
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
+                <a href="https://ro.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-flickr"></i></a>
+                <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+
+            </div>
+        </div>
+</body>
+</html>

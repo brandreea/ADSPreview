@@ -1,0 +1,163 @@
+.first-section-words {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Courier New';
+}
+
+    .first-section-words h2 {
+        font-size: 200%;
+      
+    }
+
+	.first-section-words h3 {
+		font-size: 150%;
+		color: white;
+	}
+
+
+
+.container1 {
+    position: relative;
+}
+.section2
+{
+    display:block;
+}
+.section2 .content{
+    display: flex;
+    background-color: #e6dede;
+    overflow: hidden;
+    justify-content: center;
+    background-color: white;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-content: center;
+    text-align: center;
+    margin-left: 10%;
+    margin-right:10%;
+
+    margin-bottom:10%;
+}
+    
+.section2 .titlepg{
+   
+    text-align:center;
+   
+    margin-top:10%;
+ 
+   
+   
+}
+    .section2 h1 {
+        /*font-size: 30px;*/
+        color: #353535;
+        display: inline-block;
+        text-align: justify;
+        border-bottom-color: black;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        padding-bottom:10px;
+    }
+
+    .section2 .content .column {
+        max-width: 15%;
+        max-height: 20%;
+        background-color: #b7c3c0;
+        padding: 30px 30px;
+        color: #070606;
+        box-shadow: 10px 20px 10px grey;
+        margin: 10px;
+        border-radius:8px;
+    }
+
+        .section2 .content .column h2 {
+            font-size: 20px;
+            color: #353535;
+        }
+    .section3 
+    {
+        border-top-color:black;
+        border-top-style:solid;
+        border-top-width:5px;
+        margin-left: 20%;
+        margin-right:20%;
+        margin-bottom:5%;
+    }
+    .section3 h1
+    {
+        margin-left:10%;
+        margin-top:10%;
+        margin-bottom:5%;
+    }
+    .section3 p{
+      /* text-indent:50px;*/
+       text-align:center;
+    }
+        .section3 button {
+            background-color: #1d4172; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-family:'Courier New';
+            margin-left:35%;
+            
+        }
+   
+@media only screen and (max-width: 1025px)
+{
+    .section2 {
+        /*padding-left: 200px;*/
+        
+        font-size:30px;
+        display: block;
+        font-size:2em;
+        margin-right:0%;
+    }
+
+        .section2 .content .column {
+            display: block;
+            align-content: center;
+            max-width: 60%;
+            max-height: none;
+            float: none;
+            
+        }
+
+            .section2 .content .column h2 {
+                font-size: 70px;
+            }
+
+    .first-section-words h2 {
+        font-size: 80px;
+    }
+    .first-section-words h3 {
+        font-size: 30px;
+        color: white;
+    }
+    .section3 {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 5%;
+        font-size:2em;
+    }
+        .section3 h1 {
+            font-size: 2em;
+        }
+
+        .section3 button {
+            width: 30%;
+            height: 20%;
+        }
+    .section2 .content {
+        margin-left: 20%;
+        margin-right: 0%;
+        display: block;
+    }
+}
