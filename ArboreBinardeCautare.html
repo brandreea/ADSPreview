@@ -6,37 +6,55 @@
     <link rel="stylesheet" href="General.css" />
     <link rel="stylesheet" href="DataStructureStyle.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="JavaScriptFunctions.js"></script>
     <title>Arbori binari de cautare</title>
-   
+
+
 </head>
-<body>
-    
-   
+
+
+
+    <body>
         <ul>
-            <li class="right"><a href="Homepg.html">Structuri de Date si Algoritmi</a></li>
+            <li class="right"><a href="Homepg.html" id="sdaalgotit">Structuri de Date si Algoritmi</a></li>
             <li><a href="#home">Contact</a></li>
-            <li><a href="Homepg.html">Despre noi</a></li>
+            <li>
+                <a href="#section3" id="aboutus">
+
+                    Despre noi
+                </a>
+            </li>
             <li class="dropdown">
-                <a href="#" class="dropbtn">Algoritmi</a>
+                <a href="#" class="dropbtn" id="lang">
+                    Limba
+                </a>
                 <div class="dropdown-content">
-                    <a href="StivesiCozi.html">Stive si Cozi</a>
-                    <a href="ArboreBinardeCautare.html">Arbori binari de cautare</a>
-                    <a href="#">Link 3</a>
+                    <a href="Homepg.html">Romana</a>
+                    <a href="#en" onclick="changeLangtoEng()">English</a>
                 </div>
             </li>
             <li class="dropdown">
-                <a href="#" class="dropbtn">Structuri de date</a>
+                <a href="#" class="dropbtn" id="algo">Algoritmi</a>
                 <div class="dropdown-content">
-                    <a href="StivesiCozi.html">Stive si Cozi</a>
-                    <a href="ArboreBinardeCautare.html">Arbori binari de cautare</a>
-                    <a href="#">Link 3</a>
+                    <a href="StivesiCozi.html">link 1</a>
+                </div>
+
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" id="sda">Structuri de date</a>
+                <div class="dropdown-content">
+                    <a href="StivesiCozi.html" id="stack">Stive si Cozi</a>
+                    <a href="ArboreBinardeCautare.html" id="bst">Arbore Binar de Cautare</a>
+
                 </div>
             </li>
+
         </ul>
+
         <div class="main-section">
             <div class="content">
                 <div class="big-title">
-                    Arbori binari dă cautare
+                    Arbori binari de cautare
                 </div>
                 <p>
                     O stiva este o lista in cadrul careia avem acces la ultimul element inserat.
@@ -60,11 +78,11 @@
                             </li>
                             <li>
                                 plec de la radacina si, pentru fiecare nod prin care trec, verific daca valoarea pe care vreau eu sa o adaug este mai mare sau mai mica;
-                      
+
                             </li>
                             <li>
                                 daca este mai mare, continui comparatia cu fiul drept; altfel compar cu fiul stang;
-              
+
                             </li>
                             <li>
                                 repet procesul cu fiecare nod prin care trec pana cand ajung la o frunza;
@@ -74,7 +92,7 @@
                             </li>
                         </ul>
                     </li>
-                   
+
                     <li>
                         <b>find()</b>
                         <ul>
@@ -88,7 +106,7 @@
                                 in caz contrar, daca valoarea nodului cautat este mai mica, continuam rationamentul pentru fiul stang; altfel- pentru fiul drept;
                             </li>
                             <li>
-                                ne oprim din cautare fie daca gasim valoarea, fie daca am ajuns la o frunza si valoarea acesteia nu coincide cu cea cautata de noi. 
+                                ne oprim din cautare fie daca gasim valoarea, fie daca am ajuns la o frunza si valoarea acesteia nu coincide cu cea cautata de noi.
                             </li>
                         </ul>
 
@@ -123,7 +141,18 @@
                     </button>
                 </form>
                 <br />
-                </div>
             </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
+                <a href="https://ro.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-flickr"></i></a>
+                <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+
+            </div>
+        </div>
+        <script src="Header.js"></script>
     </body>
 </html>
