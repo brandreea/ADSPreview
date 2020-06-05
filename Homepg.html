@@ -1,121 +1,140 @@
 ﻿<!DOCTYPE html>
 
 <html lang="ro" xmlns="http://www.w3.org/1999/xhtml">
-<head>
+  <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="General.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="Homepg.css" />
     <title>Home Page</title>
     <script src="JavaScriptFunctions.js"></script>
-</head>
-<body>
+    <!-- <script src="Header.js"></script> -->
+  </head>
+  <body onload="typeWriter()">
     <ul>
-        <li class="right"><a href="Homepg.html" id="sdaalgotit">Structuri de Date si Algoritmi</a></li>
-        <li><a href="#home">Contact</a></li>
-        <li>
-            <a href="#section3" id="aboutus">
-
-                Despre noi
-            </a>
-        </li>
-        <li class="dropdown">
-            <a href="#" class="dropbtn" id="lang">
-                Limba
-            </a>
-            <div class="dropdown-content">
-                <a href="Homepg.html">Romana</a>
-                <a href="#en" onclick="changeLangtoEng()">English</a>
-            </div>
-        </li>
-        <li class="dropdown">
-            <a href="#" class="dropbtn" id="algo">Algoritmi</a>
-            <div class="dropdown-content">
-                <a href="StivesiCozi.html">link 1</a>
-            </div>
-
-        </li>
-        <li class="dropdown">
-            <a href="#" class="dropbtn" id="sda">Structuri de date</a>
-            <div class="dropdown-content">
-                <a href="StivesiCozi.html" id="stack">Stive si Cozi</a>
-                <a href="ArboreBinardeCautare.html" id="bst">Arbore Binar de Cautare</a>
-
-            </div>
-        </li>
-
+      <li class="right">
+        <a href="Homepg.html" id="sdaalgotit">Structuri de Date si Algoritmi</a>
+      </li>
+      <li><a href="#home">Contact</a></li>
+      <li>
+        <a href="#section3" id="aboutus" onclick="sortIt()">
+          Despre noi
+        </a>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn" id="lang">
+          Limba
+        </a>
+        <div class="dropdown-content">
+          <a href="Homepg.html">Romana</a>
+          <a href="#en" onclick="changeLangtoEng()">English</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn" id="algo">Algoritmi</a>
+        <div class="dropdown-content">
+          <a href="StivesiCozi.html">link 1</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn" id="sda">Structuri de date</a>
+        <div class="dropdown-content">
+          <a href="StivesiCozi.html" id="stack">Stive si Cozi</a>
+          <a href="ArboreBinardeCautare.html" id="bst">Arbore Binar de Cautare</a>
+        </div>
+      </li>
     </ul>
 
     <section>
-
-        <div class="container1">
-            <img src="giphy.gif" alt="frontimg" width="10000" />
-            <div class="first-section-words">
-                <h2 id="sdaalgo">
-                    Structuri de date si algoritmi
-                </h2>
-                <h3 id="subhead">
-                   
-                </h3>
-
-
-            </div>
+      <div class="container1">
+        <img src="giphy.gif" alt="frontimg" width="10000" />
+        <div class="first-section-words">
+          <h2 id="sdaalgo"></h2>
+          <h3 id="subhead"></h3>
         </div>
+      </div>
     </section>
 
     <div class="section2" id="s2">
-        <div class="titlepg">
-            <h1 id="section2tit" onclick="setTimeout(myTimers1,1000),setTimeout(myTimers2,2000),setTimeout(myTimers3,3000) ">
-                Fa primii pasi acum.
-            </h1>
-            <p id="subheadingsec2">Perfectioneaza-ti cunostintele de algoritmica in cativa pasi simpli.</p>
+      <div class="titlepg">
+        <h1
+          id="section2tit"
+          onclick="setTimeout(myTimers1,1000),setTimeout(myTimers2,2000),setTimeout(myTimers3,3000) "
+        >
+          Fa primii pasi acum.
+        </h1>
+        <p id="subheadingsec2">
+          Perfectioneaza-ti cunostintele de algoritmica in cativa pasi simpli.
+        </p>
+      </div>
+      <div class="content">
+        <div class="column">
+          <h2 id="st1">Pasul 1</h2>
+          <p id="st1c"></p>
         </div>
-        <div class="content">
-            <div class="column">
-                <h2 id="st1"> Pasul 1</h2>
-                <p id="st1c"> </p>
-            </div>
-            <div class="column">
-                <h2 id="st2">Pasul 2</h2>
-                <p id="st2c"></p>
-            </div>
-            <div class="column">
-                <h2 id="st3"> Pasul 3</h2>
-                <p id="st3c"></p>
-            </div>
+        <div class="column">
+          <h2 id="st2">Pasul 2</h2>
+          <p id="st2c"></p>
         </div>
+        <div class="column">
+          <h2 id="st3">Pasul 3</h2>
+          <p id="st3c"></p>
+        </div>
+      </div>
     </div>
-    <section id="section3" >
-        <div class="section3">
-            <h1 id="boutus3"> Despre noi </h1>
-            <p>     Suntem un grup de tineri creativi, pasionati de informatica si ne dorim sa impartasim aceasta pasiune intr-un mod atractiv si distractiv.</p>
-            <p> Consideram ca intr-o societate, educatia joaca un rol important, iar problemele de algoritmica sunt un bun exercitiu pentru dezvoltarea gandirii critice.</p>
-            <p>Astfel, pasiunea si filosofia noastra se intalnesc acolo unde incepe adevarata provocare: de a impartasi aceste concepte si cu ceilalti.</p>
-            <p> Impreuna, ne propunem sa construim un suport vizual creativ, care sa ajute la formarea unei intuitii referitoare la modul de functionare a unor structuri de date eficiente si a unor algoritmi optimi.</p>
-            <p>Daca mereu ti-ai dorit sa inveti algoritmica, dar nu stiai de unde sa incepi, daca esti la liceu si ai nevoie de clarificari la informatica sau daca doar iti plac problemele de perspicacitate, atunci aici e locul tau.</p>
+    <section id="section3">
+      <div class="section3">
+        <h1 id="boutus3">Despre noi</h1>
+        <p>
+          Suntem un grup de tineri creativi, pasionati de informatica si ne dorim sa impartasim
+          aceasta pasiune intr-un mod atractiv si distractiv.
+        </p>
+        <p>
+          Consideram ca intr-o societate, educatia joaca un rol important, iar problemele de
+          algoritmica sunt un bun exercitiu pentru dezvoltarea gandirii critice.
+        </p>
+        <p>
+          Astfel, pasiunea si filosofia noastra se intalnesc acolo unde incepe adevarata provocare:
+          de a impartasi aceste concepte si cu ceilalti.
+        </p>
+        <p>
+          Impreuna, ne propunem sa construim un suport vizual creativ, care sa ajute la formarea
+          unei intuitii referitoare la modul de functionare a unor structuri de date eficiente si a
+          unor algoritmi optimi.
+        </p>
+        <p>
+          Daca mereu ti-ai dorit sa inveti algoritmica, dar nu stiai de unde sa incepi, daca esti la
+          liceu si ai nevoie de clarificari la informatica sau daca doar iti plac problemele de
+          perspicacitate, atunci aici e locul tau.
+        </p>
 
-            <br />
-            <button id="startbtn">
-                Fa primii pasi acum.
-            </button>
-        </div>
+        <br />
+        <button id="startbtn">
+          Fa primii pasi acum.
+        </button>
+      </div>
     </section>
+
     <div class="footer" id="f">
-        <div class="footer-content">
-            <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
-            <a href="https://ro.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href=""><i class="fa fa-flickr"></i></a>
-            <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
-
-        </div>
+      <div class="footer-content">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
+        <a href="https://ro.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href=""><i class="fa fa-flickr"></i></a>
+        <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+      </div>
     </div>
-    <p id="demo" onclick="myFunction()">Click me to change my text color.</p>
-   <script>	$("st2").hide();
-			$("section3").hide();
-			$("f").hide();
-			var section2Timer=setInterval(myTimer,5000);</script>
-    <script src="JavaScriptFunctions.js"></script>
 
-</body>
+    <!-- <script>
+      $('st2').hide();
+      $('section3').hide();
+      $('f').hide();
+      var section2Timer = setInterval(myTimer, 5000);
+    </script> -->
+    <script src="JavaScriptFunctions.js"></script>
+    <script src="Header.js"></script>
+  </body>
 </html>
